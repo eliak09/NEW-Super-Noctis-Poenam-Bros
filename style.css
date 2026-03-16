@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Jacquard12Reg";
+    src:
+    url(Shitty-Fonts-Again/woff/Jacquard12-Regular.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Jacquard12Char";
+    src:
+    url(Shitty-Fonts-Again/woff/Jacquard12Charted-Regular.woff) format("woff");
+}
+@font-face {
+    font-family: "Jacquard24Reg";
+    src:
+    url(Shitty-Fonts-Again/woff/Jacquard24-Regular.woff) format("woff");
+}
+@font-face {
+    font-family: "Jacquard24Char";
+    src:
+    url(Shitty-Fonts-Again/woff/Jacquard24Charted-Regular.woff) format("woff");
+}
+@font-face {
+    font-family: "BaskervilleReg";
+    src:
+    url(Shitty-Fonts-Again/woff/Baskervville-Regular.woff) format("woff");
+}
+
+body{
+    font-weight: 400;
+    margin: 0;
+   /* Configuración del fondo global */
+    background-color: #000; /* Color de respaldo en caso de que la imagen tarde en cargar */
+    background-image: url("Fondo\ TASE.JPG"); /* Reemplaza con el nombre exacto de tu archivo */
+    background-size: cover; /* Cubre toda la pantalla */
+    background-position: center center; /* Centra la imagen en ambos ejes */ /* Evita que la imagen se duplique */ /* Mantiene la imagen estática al hacer scroll */
+}
+
+.title{
+    color: #7500ff;
+    font-family: "Jacquard12Reg";
+    font-weight: 400;
+    font-size: 55pt;
+}
+
+.subTitle{
+    color: #7500ff;
+    font-family: "Jacquard12Char";
+    font-weight: 400;
+    font-size: 30pt;
+}
+
+.bannerBox {
+    color: slategray;
+    width: 100%;
+    border-style: ridge;
+    padding: 20px 20px; /* Padding razonable: arriba/abajo 40px, izquierda/derecha 20px */
+    text-align: center;
+}
+
+.stickyFather {
+    display: flex;
+    justify-content: space-between; /* Envía el primer hijo a la izquierda y el segundo a la derecha */
+    align-items: flex-start; /* Evita que el stickyBox se estire hasta abajo */
+    padding: 30px;
+    width: 100%; /* Asegura que no rebase la pantalla */
+}
+
+.bodyVessel{
+    width: 70%; /* Toma el 70% del espacio */
+    display: flex;
+    flex-direction: column; /* Fuerza a que los h1 y h2 fluyan hacia abajo */
+    gap: 30px; /* Espacio vertical entre canciones */
+}
+
+.stickyBox {
+    /*background: black;
+    border: 5px groove #7500ff;
+    padding: 5px;
+    width: 20%; 
+    position: sticky;
+    bottom: 10px;
+    text-align: center; 
+    align-self: flex-end; */
+    background: black;
+    border: 5px groove #7500ff;
+    padding: 5px;
+    text-align: center;
+    
+    /* Nuevas reglas de posicionamiento fijo */
+    position: fixed; 
+    bottom: 20px; /* Distancia desde abajo */
+    right: 20px;  /* Distancia desde la derecha */
+    width: 200px; /* Ancho fijo recomendado para elementos flotantes */
+    z-index: 100;
+}
+
+#stickyTxt {
+    color: red;
+}
+
+h1 {
+    color: #7500ff;
+    font-family: "Jacquard24Reg";
+}
+
+.bodyTxt {
+    width: 65%; /* Toma el 65% del ancho para el texto */
+    color: #fff;
+    font-family: "BaskervilleReg";
+}
